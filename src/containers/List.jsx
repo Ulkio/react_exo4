@@ -10,7 +10,6 @@ class List extends Component {
     };
   }
   render() {
-    const array = ["1", "2", "3", "4"];
     return (
       <>
         <ul className={styles.list}>
@@ -23,7 +22,7 @@ class List extends Component {
           })}
         </ul>
         <ul>
-          {array.map((index, item) => {
+          {new Array(4).fill("coucou").map((item, index) => {
             return <li key={index}>{item}</li>;
           })}
         </ul>
